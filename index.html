@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>Canva</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <span><img src="./logo.svg" alt="canvas"></span>
+            The best free graphic design software to create social media posts in 2023
+        </header>
+        <div class="body">
+            <div class="title-wrapper">
+                <div class="title">
+                    What will you design to day?
+                </div>
+                <div class="content">
+                    Canva makes it easy to create professional designs and to share or print them.
+                </div>
+            </div>
+            <div class="quick-review">
+                <div class="center-review">
+                    <video autoplay draggable="false" loop playsinline src="https://content-management-files.canva.com/943bd1b3-ffd6-4892-a4df-b107cb33e657/hero-banner-en-1600x852.mp4"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-download">
+            <div class="download-app" id="downloadButton">
+                Click to download app
+            </div>
+        </div>
+        
+<!-- capcha -->
+
+       <div class="wrapper-capcha">
+        <div id="captchaBackground">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+        </div>
+       </div>
+
+
+
+        <div class="ready-made-designs">
+            <div class="wrapper-video">
+                <video autoplay draggable="false" loop playsinline src="https://static.canva.com/anon_home/benefits-start-en-1200x780-compressed.mp4"/>
+            </div>
+            <div class="quick-intro">
+                <div class="title">Ready-made designs</div>
+                <div class="content">
+                    Benefit from thousands of professional templates, images, and quality content to choose from, for example when ordering new business cards or editing your next video.
+                </div>
+            </div>
+        </div>
+
+        <div class="ready-made-designs">
+            <div class="quick-intro">
+                <div class="title">Built for teamwork</div>
+                <div class="content">
+                    Invite people to edit with you or set your whole team up to manage brand assets, brainstorm on whiteboards, get approvals, and scale content with tools like docs.
+                </div>
+            </div>
+            <div class="wrapper-video">
+                <video autoplay draggable="false" loop playsinline src="https://static.canva.com/anon_home/benefits/benefits-collab-en-974x634.mp4"/>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
